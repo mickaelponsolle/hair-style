@@ -1,0 +1,755 @@
+.container {
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+
+
+/******************************************/
+/*           CORPS PRINCIPAL              */
+/******************************************/
+#body_plan {
+ 	background-color: #432D17;
+    width: 1250px; /* Pas 1280 car il y a les bordures arrondis */
+	margin-left: auto; 
+    margin-right: auto; 
+	padding-bottom: 7px;
+}
+
+/******************************************/
+/*           COINS ARRONDIS               */
+/******************************************/
+#section_principale {
+    border: 10px solid #FFFCDE;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0px 6px 9px;
+    -moz-box-shadow: #666 0px 6px 9px;
+    box-shadow: #666 0px 6px 9px;
+}
+
+/******************************************/
+/*                  HAUT                  */
+/******************************************/
+#haut {
+    background-color: #FFFCDE;
+    width: 100%;
+    height: 160px;
+}
+
+#table_haut {
+    width: 100%;
+    height: 150px;
+}
+
+#table_haut td {
+    width: 33%;
+    vertical-align: top;
+}
+
+#logo {
+	height: 120px;
+}
+
+#titre {
+    width: 500px;
+}
+
+h1 {
+    color: #432D17;
+    margin: 0;
+    padding: 0;
+    font-style:italic;
+    font-weight: normal;
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 850%;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#reference_gauche {
+    margin-top: 15px;
+}
+
+#reference_droite {
+    float: right;
+    font-family: Arial, Verdana, "Times New Roman", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 100%;
+    color: #9600FA;
+    text-align: right;
+    position: relative;
+    top: 0px;
+    right: 10px;
+    margin-top: 30px;
+}
+
+#telephone {
+    font-size: 250%;	
+    text-decoration: none;
+    color: #9600FA;
+}
+
+/******************************************/
+/*                  BAS                   */
+/******************************************/
+#bas {
+    background-color: #FFFCDE;
+    position: relative; /* pour IE*/
+    padding-top: 5px; /* pour IE*/
+    height: 30px;
+    width: 100%;
+}
+
+.left {
+    font-family: Arial, "Times New Roman", Verdana, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 75%;
+    color: #0b0b4e;
+    text-align: left;
+    /*width: 100%;*/
+    vertical-align : middle;    
+    float: left;
+}
+
+.left a {
+    color: #0b0b4e;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.right {
+    font-family: Arial, "Times New Roman", Verdana, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 75%;
+    color: #0b0b4e;
+    text-align: right;
+    position: relative;
+    right: 7px;
+    /*width: 100%;*/
+    vertical-align : middle;
+    float: right;
+}
+
+.right a {
+    color: #0b0b4e;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/******************************************/
+/*                  CONTENU               */
+/******************************************/
+#contenu {
+    background-color: #FFFCDE;
+    padding-top: 20px;
+}
+
+/******************************************/
+/*                  MENU                  */
+/******************************************/
+#menu .texte_menu {
+    font-family: Arial, Verdana, serif;
+    font-weight: bold;
+    font-size: 140%;
+    color: #FFFCDE;
+    text-decoration: none;   
+    width: 100%;     
+}
+
+#menu table {
+    background-color: #FFFCDE;
+    width: 100%;     
+}
+
+.cellule_menu {
+    border: 2px solid #FFFCDE;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0px 6px 9px;
+    -moz-box-shadow: #666 0px 6px 9px;
+    box-shadow: #666 0px 6px 9px;
+
+
+    background-color: #9E8A5D;
+    background-image: url("../images/fond-menu.jpg");
+    background-repeat: repeat-x;
+    height: 100%;
+/*    border : solid 1px black;*/
+    text-align: center;   
+}
+
+.cellule_menu_selectionne{
+    background-color: #9E8A5D;
+    background-image: url("../images/fond-menu-selectionne.jpg");
+    background-repeat: repeat-x;
+    height: 100%;
+    border : solid 1px black;
+    text-align: center;   
+}
+
+/******************************************/
+/*             ACCUEIL                    */
+/******************************************/
+.texte_accueil {
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  color: #9600FA;
+  width: 100%;
+  
+}
+
+/******************************************/
+/*             ZONE                       */
+/******************************************/
+.texte_carte {
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  color: #9600FA;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#page_zone table {
+  width: 100%;
+}
+
+#carte {
+  position:relative;
+	left: 50%;
+	margin-left: -169px; 
+	
+}
+
+.liste_element {
+  list-style-image: url("../images/ciseaux.gif");
+}
+
+
+.puce_ville {
+  position: relative;
+  top: -50px;
+}
+
+.texte_ville {
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #9600FA;
+  text-align: center;
+}
+
+
+/******************************************/
+/*             TARIFS                     */
+/******************************************/
+.table {
+  margin-top : 30px;
+  width: 100%;
+  text-align: center;
+}
+
+
+td p {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.box_dames {
+   background: #d1baf9 url("../images/coins/dames_grad.gif") repeat-x top left;
+}
+.top_dames div {
+   background: url("../images/coins/dames_tl.gif") no-repeat top left;
+}
+.top_dames {
+   background: transparent url("../images/coins/dames_tr.gif") no-repeat top right;
+}
+.bottom_dames div {
+   background: url("../images/coins/dames_bl.gif") no-repeat bottom left;
+}
+.bottom_dames {
+   background: transparent url("../images/coins/dames_br.gif") no-repeat bottom right;
+}
+
+.top_dames div, .top_dames,
+.bottom_dames div, .bottom_dames {
+   height: 4px;
+   font-size: 1px;
+}
+.content_dames { 
+  margin: 0 4px; 
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  padding-top: -5px;
+  padding-bottom : 5px;
+}
+
+.box_baby {
+   background: #f8cafb url("../images/coins/baby_grad.gif") repeat-x top left;
+}
+.top_baby div {
+   background: url("../images/coins/baby_tl.gif") no-repeat top left;
+}
+.top_baby {
+   background: transparent url("../images/coins/baby_tr.gif") no-repeat top right;
+}
+.bottom_baby div {
+   background: url("../images/coins/baby_bl.gif") no-repeat bottom left;
+}
+.bottom_baby {
+   background: transparent url("../images/coins/baby_br.gif") no-repeat bottom right;
+}
+
+.top_baby div, .top_baby,
+.bottom_baby div, .bottom_baby {
+   height: 4px;
+   font-size: 1px;
+}
+.content_baby { 
+  margin: 0 4px; 
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  padding-top: -5px;
+  padding-bottom : 5px;
+}
+
+.box_hommes{
+   background: #b6c7ef url("../images/coins/hommes_grad.gif") repeat-x top left;
+}
+.top_hommes div {
+   background: url("../images/coins/hommes_tl.gif") no-repeat top left;
+}
+.top_hommes {
+   background: transparent url("../images/coins/hommes_tr.gif") no-repeat top right;
+}
+.bottom_hommes div {
+   background: url("../images/coins/hommes_bl.gif") no-repeat bottom left;
+}
+.bottom_hommes {
+   background: transparent url("../images/coins/hommes_br.gif") no-repeat bottom right;
+}
+
+.top_hommes div, .top_hommes,
+.bottom_hommes div, .bottom_hommes {
+   height: 4px;
+   font-size: 1px;
+}
+.content_hommes { 
+  margin: 0 4px; 
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  padding-top: -5px;
+  padding-bottom : 5px;
+}
+
+.box_technique{
+   background: #d3d4d5 url("../images/coins/technique_grad.gif") repeat-x top left;
+}
+.top_technique div {
+   background: url("../images/coins/technique_tl.gif") no-repeat top left;
+}
+.top_technique {
+   background: transparent url("../images/coins/technique_tr.gif") no-repeat top right;
+}
+.bottom_technique div {
+   background: url("../images/coins/technique_bl.gif") no-repeat bottom left;
+}
+.bottom_technique {
+   background: transparent url("../images/coins/technique_br.gif") no-repeat bottom right;
+}
+
+.top_technique div, .top_technique,
+.bottom_technique div, .bottom_technique {
+   height: 4px;
+   font-size: 1px;
+}
+.content_technique { 
+  margin: 0 4px; 
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  padding-top: -5px;
+  padding-bottom : 5px;
+}
+
+.box_carte{
+   background: #faf091 url("../images/coins/carte_grad.gif") repeat-x top left;
+}
+.top_carte div {
+   background: url("../images/coins/carte_tl.gif") no-repeat top left;
+}
+.top_carte {
+   background: transparent url("../images/coins/carte_tr.gif") no-repeat top right;
+}
+.bottom_carte div {
+   background: url("../images/coins/carte_bl.gif") no-repeat bottom left;
+}
+.bottom_carte {
+   background: transparent url("../images/coins/carte_br.gif") no-repeat bottom right;
+}
+
+.top_carte div, .top_carte,
+.bottom_carte div, .bottom_carte {
+   /*width: 100%;*/
+   height: 4px;
+   font-size: 1px;
+}
+.content_carte { 
+  margin: 0 4px; 
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  padding-top: -5px;
+  padding-bottom : 5px;
+}
+
+#table_dames {
+  margin: auto;
+}
+#table_hommes {
+  margin: auto;
+}
+#table_baby {
+  margin: auto;
+}
+#table_technique {
+  margin: auto;
+}
+#table_carte {
+  margin: auto;
+}
+
+
+.cellule {
+  font-family: Verdana, Arial, serif;
+  font-size: 90%;
+  color: #59441A;
+  text-align: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  margin-top: 0px;
+}
+
+.cellule_prestations_dames {
+  border : solid 1px black;
+  text-align: center; 
+  border-collapse: collapse;
+}
+
+.cellule_prix {
+  font-family: Verdana, Arial, serif;
+  font-size: 90%;
+  color: #59441A;
+  text-align: right;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  margin-top: 0px;
+}
+
+.cellule_categorie_dame {
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 140%;
+  padding-top : 0px;
+  padding-bottom : 0px;
+  margin-top : 0px;
+  margin-bottom : 0px;
+}
+
+.cellule_categorie_homme {
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 140%;
+  padding-top : 0px;
+  padding-bottom : 0px;
+  margin-top : 0px;
+  margin-bottom : 0px;
+}
+
+.cellule_categorie_technique {
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 140%;
+  padding-top : 0px;
+  padding-bottom : 0px;
+  margin-top : 0px;
+  margin-bottom : 0px;
+}
+
+.cellule_categorie_carte {
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 140%;
+  padding-top : 0px;
+  padding-bottom : 0px;
+  margin-top : 0px;
+  margin-bottom : 0px;
+}
+
+.cellule_categorie_baby {
+  color: #FFFCDE;
+  text-align: center;
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 140%;
+  padding-top : 0px;
+  padding-bottom : 0px;
+  margin-top : 0px;
+  margin-bottom : 0px;
+}
+
+.lien_tarifs_download {
+  text-decoration: none;
+}
+.texte_tarifs_download {
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 80%;
+  color: #9600FA;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+#imgDownload {
+  padding-bottom: -10px;
+  border: none;
+}
+
+/******************************************/
+/*             CONTACT                    */
+/******************************************/
+.texte_contact {
+  font-family: Arial, serif;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  color: #9600FA;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.champs_contact {
+  font-family: Verdana, Arial, serif;
+  font-weight: normal;
+  font-size: 90%;
+  color: #9600FA;
+  text-align: right;
+  width: 20%;
+}
+
+.formulaire table {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.boutonEnvoyer {
+  margin-left: 580px;
+}
+
+.email {
+  width: 25%;
+}
+
+.sujet {
+  width: 40%;
+}
+
+.formulaire textarea {
+  width: 85%;
+}
+
+.resultat_contact {
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #9600FA;
+  text-align: center;
+  width:100%;
+  height: 200px;
+  
+}
+
+.resultat_contact span {
+vertical-align: middle;
+}
+
+/******************************************/
+/*             LIVRE D'OR                 */
+/******************************************/
+.texte_livredor {
+  font-family: Arial, serif;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  color: #9600FA;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.champs_livredor {
+  font-family: Arial, Verdana, serif;
+  font-weight: normal;
+  font-size: 95%;
+  color: #432D17;
+  text-align: right;
+  width: 20%;
+  display: inline;
+}
+
+.message_livredor {
+  font-size: 90%;
+  font-style: italic;
+  color: #FFFCDE;
+  margin: 5px 60px;
+}
+
+.nom_livredor {
+  font-family: Arial Narrow, Verdana, serif;
+  font-size: 105%;
+  font-style: italic;
+  font-weight: bold;
+  color: #965EFF;
+  margin: 0 0 0 20px ;
+}
+
+#texte_error {
+  color : red;
+  font-weight : bold;
+}
+
+.tableAjoutCommentaire {
+  width: 100%;  
+}
+
+#envoyerCommentaire {
+  text-align: center;
+}
+
+.bloc_message_livredor {
+    width: 1130px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing:0px 0px 0px 0px;
+    background-color: #432D17;
+
+    border: 1px solid #432D17;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0px 6px 9px;
+    -moz-box-shadow: #666 0px 6px 9px;
+    box-shadow: #666 0px 6px 9px;
+    
+}
+
+.page_livredor {
+  font-family: Arial, Verdana, serif;
+  font-weight: normal;
+  font-size: 80%;
+  color: #853FFF;
+  text-align: center;
+  margin: 0;
+}
+
+.page_livredor   a {
+  text-decoration: none;   
+  color: #853FFF;
+  width: 100%;     
+}
+
+/******************************************/
+/*             PARTENAIRES                */
+/******************************************/
+.div_partenaire {
+  padding-top: 1%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+}
+
+.img_partenaire {
+  width: 13%;
+  border: none;
+  float: left;
+}
+
+.titre_partenaire {
+  font-family: Verdana, Arial, serif;
+  font-weight: bold;
+  font-size: 95%;
+  text-align: left;
+  color: #9600FA;
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.desc_partenaire {
+  font-family: Verdana, Arial, serif;
+  font-weight: normal;
+  font-size: 80%;
+  text-align: left;
+  color: #9600FA;
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.lien_partenaire  {
+  font-family: Arial, "Times New Roman", Verdana, serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 100%;
+  color: #0b0b4e;
+  text-align: center;
+  text-decoration: none;
+}
+
+/******************************************/
+/*             PRODUITS                   */
+/******************************************/
+#table_produits {
+  width: 100%;
+}
+
+.div_produit {
+  padding-top: 1%;
+  padding-bottom: 8%;
+  padding-left: 28%;
+}
+.img_produit {
+  width: 180px;
+  border: none;
+  float: left;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Test effets Shrink / Grow</title>
+  <style type="text/css">
+    <!--
+      #conteneur{
+        background-color : blue;
+        width : 200px;
+        height : 150px;
+      }
+      .exemple{
+        margin: 40px;
+      }
+    -->
+  </style>
+  <script type="text/javascript" src="./js/prototype.js"></script>
+  <script type="text/javascript" src="./js/scriptaculous.js?load=effects"></script>
+</head>
+
+<body>
+  <div class="exemple">
+    <h3>Effets Shrink / Grow.</h3>
+    <div id="conteneur"></div>
+    <input type="button" value="Grow" onclick="$('conteneur').grow({direction: 'top-left'});" />
+  </div>
+</body>
+</html>

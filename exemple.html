@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <style>
+        .buttonType1 { 
+            color : green; 
+        } 
+        
+        .buttonType2 { 
+            color : red; 
+        }
+    </style>
+    <script language="javascript">
+        function change_class(element) { 
+            element.className="buttonType2"; 
+        }
+        
+        function changeCell(el) {
+            /*
+			cell=document.getElementsByTagName('td');
+            for(c=0;c<cell.length;c++) {
+                cell[c].style.background="#ff00ff";
+            }
+            el.onmouseout=function() {
+                for(c=0;c<cell.length;c++) {
+                    cell[c].style.background="#ffffff";
+                }
+            }
+			*/
+			el.style.background="#ff00ff";
+            
+        } 
+		
+		function reInitCell(el) {
+            /*
+			cell=document.getElementsByTagName('td');
+            for(c=0;c<cell.length;c++) {
+                cell[c].style.background="#ff00ff";
+            }
+            el.onmouseout=function() {
+                for(c=0;c<cell.length;c++) {
+                    cell[c].style.background="#ffffff";
+                }
+            }
+			*/
+			
+            el.style.background="#ffffff";                
+            
+        } 
+        
+    </script>
+  </head>
+  <body>
+    <fieldset id="fieldsetAjoutCommentaire">
+      <legend><strong>Ajouter votre commentaire</strong></legend>
+      <form method="post" action="index.php?page=livredor">        
+        <table>
+            <tr>
+              <td>
+                <p class="champs_livredor">Nom :    </p><input name="nom"/><br />
+              </td>
+              <td rowspan="5">
+                <p class="champs_livredor">Message : </p><br />
+                <textarea name="message" rows="8" cols="120"></textarea><br />
+              </td>
+            <tr>
+            <tr>
+              <td>
+                <p class="champs_livredor">E-mail : </p><input name="email"/><br />
+              </td>
+              <td>
+              </td>
+            <tr>
+            <tr>
+              <td>
+                <?php dsp_crypt(2,'Réactualiser'); ?>
+                <p class="champs_livredor">Recopier le code:<input type="text" name="codeCaptcha"></p><br/>
+              </td>
+              <td>
+              </td>
+            <tr>            
+          </table>
+          <input type="submit" value="Envoyer" />
+      </form>
+      
+    </fieldset>
+  
+    <form>
+    
+      <table>
+        <tr>
+          <td class="cellule_menu" onmouseover="changeCell(this)" onmouseout="reInitCell(this)" >
+            <a href="index.php" class="buttonType1" >
+              <span>Accueil</span>            
+            </a>
+          </td>
+        </tr>
+      </table>  
+      <input type="button" value="Test" class="buttonType1"
+      onmouseover="change_class(this)"></input>
+    </form>
+  </body>
+</html>
